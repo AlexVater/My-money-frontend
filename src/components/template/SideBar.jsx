@@ -3,7 +3,7 @@ import Menu from './Menu'
 
 const SideBar = () => {
     return(
-        <div className="flex flex-col h-screen bg-gray-800 text-white">
+        <div className="h-screen w-60 max-w-xs bg-gray-800 text-white">
             <Menu />
         </div>
     )

@@ -4,9 +4,8 @@ import MenuItem from './MenuItem';
 const Menu = () => {
     return (
         <ul className="list-inside">
-            <MenuItem title="Home"/>
-            <MenuItem title="Pagamentos"/>
-            <MenuItem title="Login"/>
+            <MenuItem title="Home" path="/"/>
+            <MenuItem title="Pagamentos" path="/billingCycles"/>
         </ul>
     );
 };
