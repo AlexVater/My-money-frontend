@@ -19,7 +19,7 @@ const ValueBox = (props) => {
 
   return (
     <div
-      className={`w-80 p-4 flex border-l-4 border-${props.color}-500 bg-gray-100 text-gray-700 rounded shadow-md`}
+      className={`w-80 p-4 flex border-l-8 border-${props.color}-500 bg-gray-100 text-gray-700 rounded shadow-md`}
     >
       <div className="mr-auto">
         <h1 className="text-2xl font-bold">R$ {props.title}</h1>
