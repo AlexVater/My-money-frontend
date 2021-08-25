@@ -5,7 +5,7 @@ const initialState = {
   },
 };
 
-export default function reducer(state = initialState, action) {
+export default function getSummaryReducer(state = initialState, action) {
   switch (action.type) {
     case "BILLING_SUMMARY_FETCHED":
       return { ...state, summary: action.payload.data };
