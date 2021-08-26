@@ -1,10 +1,14 @@
-import { combineReducers, createStore } from "redux";
+import { combineReducers, createStore, applyMiddleware } from "redux";
 import dashboardReducer from "./reducers/dashboardReducer";
+import promise from "redux-promise";
 
 const reducers = combineReducers({
   dashboard: dashboardReducer,
 });
 
-export default function store() {
-  return createStore(reducers);
-}
+const devTools =
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
+
+const store = applyMiddleware(promise)(createStore)(reducers, devTools);
+
+export default store;

@@ -1,23 +1,20 @@
-import { React, useEffect, useState } from "react";
+import { React, useEffect } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+
+import { getSummary } from "../store/actions/dashboardAction";
 
 import Grid from "../components/layout/Grid";
 import SectionContent from "../components/template/SectionContent";
 import SectionHeader from "../components/template/SectionHeader";
 import ValueBox from "../widget/ValueBox";
 
-import axios from "axios";
-const baseURL = "http://localhost:8080/api/";
-
-const Dashboard = () => {
-  const [values, setValues] = useState({ credit: 0, debt: 0 });
-
+const Dashboard = (props) => {
   useEffect(() => {
-    axios
-      .get(`${baseURL}billingCycles/summary`)
-      .then((resp) => setValues(resp.data));
-  }, []);
+    props.getSummary();
+  }, [props]);
 
-  const { credit, debt } = values;
+  const { credit, debt } = props.summary;
 
   return (
     <>
@@ -38,7 +35,7 @@ const Dashboard = () => {
           />
           <ValueBox
             color="green"
-            title={credit - debt}
+            title="122,50"
             sub="Valor Consolidado"
             icon="GiBanknote"
           />
@@ -48,4 +45,9 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+const mapStateToProps = (state) => ({ summary: state.dashboard.summary });
+
+const mapDispatchToProps = (dispatch) =>
+  bindActionCreators({ getSummary }, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
