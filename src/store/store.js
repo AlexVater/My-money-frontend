@@ -1,9 +1,13 @@
 import { combineReducers, createStore, applyMiddleware } from "redux";
-import dashboardReducer from "./reducers/dashboardReducer";
 import promise from "redux-promise";
+import dashboardReducer from "./reducers/dashboardReducer";
+import tabsReducer from "./reducers/tabsReducer";
+import billingCycleReducer from "./reducers/billingCycleReducer";
 
 const reducers = combineReducers({
   dashboard: dashboardReducer,
+  tab: tabsReducer,
+  billingCycle: billingCycleReducer,
 });
 
 const devTools =
