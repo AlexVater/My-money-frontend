@@ -3,11 +3,13 @@ import promise from "redux-promise";
 import dashboardReducer from "./reducers/dashboardReducer";
 import tabsReducer from "./reducers/tabsReducer";
 import billingCycleReducer from "./reducers/billingCycleReducer";
+import { reducer as formReducer } from "redux-form";
 
 const reducers = combineReducers({
   dashboard: dashboardReducer,
   tab: tabsReducer,
   billingCycle: billingCycleReducer,
+  form: formReducer,
 });
 
 const devTools =

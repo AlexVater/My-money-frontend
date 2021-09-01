@@ -3,6 +3,7 @@ import "./App.css";
 
 import Content from "./components/template/Content";
 import SideBar from "./components/template/SideBar";
+import Message from "./components/msg/Menssages";
 
 function App() {
   return (

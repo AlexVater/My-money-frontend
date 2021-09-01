@@ -4,6 +4,8 @@
     <list default="true" id="45da80e1-0535-47fd-9ba2-e6456ce60955" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/billingCycle/BillingCycle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/billingCycle/BillingCycle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/billingCycle/BillingCycleList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/billingCycle/BillingCycleList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/operator/If.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/operator/If.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +14,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9142d95c-6a1a-4f2a-9894-a2946bb905dc" />
+        <option name="url" value="https://github.com/AlexVater/My-money-frontend.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="1xUs2wW9BdyAnUiSvvxdhBKUawJ" />
   <component name="ProjectViewState">
@@ -37,10 +55,31 @@
       <option name="presentableId" value="Default" />
       <updated>1630420799391</updated>
       <workItem from="1630420805082" duration="201000" />
+      <workItem from="1630499499835" duration="1121000" />
+      <workItem from="1630500649244" duration="47000" />
+      <workItem from="1630500708482" duration="245000" />
+      <workItem from="1630500970246" duration="364000" />
+      <workItem from="1630501358770" duration="3782000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
