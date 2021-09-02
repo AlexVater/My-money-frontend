@@ -40,7 +40,7 @@ const TabHeader = (props) => {
         }`}
       >
         <a
-          className="p-2"
+          className="p-2 "
           href="#"
           data-toggle="tab"
           data-target="{props.target}"
