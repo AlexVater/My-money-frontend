@@ -2,9 +2,14 @@ import React from "react";
 import { useEffect } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { getList, showUpdate } from "../store/actions/billingCycleAction";
+import {
+  getList,
+  showUpdate,
+  showDelete,
+} from "../store/actions/billingCycleAction";
 
 import { RiPencilFill } from "react-icons/ri";
+import { IoTrashBin } from "react-icons/io5";
 
 const BillingCycleList = (props) => {
   useEffect(() => {
@@ -19,12 +24,18 @@ const BillingCycleList = (props) => {
           <td>{blc.name}</td>
           <td>{blc.month}</td>
           <td>{blc.year}</td>
-          <td>
+          <td className="flex gap-4">
             <button
               className="p-2 text-sm rounded bg-gray-700 text-white hover:text-yellow-400"
               onClick={() => props.showUpdate(blc)}
             >
               <RiPencilFill />
+            </button>
+            <button
+              className="p-2 text-sm rounded bg-gray-700 text-white hover:text-red-400"
+              onClick={() => props.showDelete(blc)}
+            >
+              <IoTrashBin />
             </button>
           </td>
         </tr>
@@ -40,7 +51,7 @@ const BillingCycleList = (props) => {
             <th>Nome</th>
             <th>Mes</th>
             <th>Ano</th>
-            <th>Ações</th>
+            <th className="w-36 ">Ações</th>
           </tr>
         </thead>
         <tbody className="mt-3 text-gray-700">{renderRows()}</tbody>
@@ -51,6 +62,6 @@ const BillingCycleList = (props) => {
 
 const mapsStateToProps = (state) => ({ list: state.billingCycle.list });
 const mapDispatchToProps = (dispatch) =>
-  bindActionCreators({ getList, showUpdate }, dispatch);
+  bindActionCreators({ getList, showUpdate, showDelete }, dispatch);
 
 export default connect(mapsStateToProps, mapDispatchToProps)(BillingCycleList);

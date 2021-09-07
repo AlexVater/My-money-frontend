@@ -16,7 +16,7 @@ import TabContent from "../components/tab/TabContent";
 import BillingCycleList from "./BillingCycleList";
 import BillingCycleForm from "./BillingCycleForm";
 
-import { create } from "../store/actions/billingCycleAction";
+import { create, update, remove } from "../store/actions/billingCycleAction";
 
 const BillingCycle = (props) => {
   useEffect(() => {
@@ -50,10 +50,10 @@ const BillingCycle = (props) => {
               <BillingCycleForm onSubmit={props.create} />
             </TabContent>
             <TabContent id="tabUpdate">
-              <BillingCycleForm />
+              <BillingCycleForm onSubmit={props.update} />
             </TabContent>
             <TabContent id="tabDelete">
-              <h1>Excluir</h1>
+              <BillingCycleForm onSubmit={props.remove} readOnly={true} />
             </TabContent>
           </TabsContent>
         </Tabs>
@@ -63,6 +63,6 @@ const BillingCycle = (props) => {
 };
 
 const mapDispatchToProps = (dispatch) =>
-  bindActionCreators({ selectTab, showTabs, create }, dispatch);
+  bindActionCreators({ selectTab, showTabs, create, update, remove }, dispatch);
 
 export default connect(null, mapDispatchToProps)(BillingCycle);

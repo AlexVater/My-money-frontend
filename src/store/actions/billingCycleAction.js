@@ -14,15 +14,23 @@ export function getList() {
 }
 
 export function create(values) {
+  return submit(values, "post");
+}
+
+export function update(values) {
+  return submit(values, "put");
+}
+
+export function remove(values) {
+  return submit(values, "delete");
+}
+
+function submit(values, method) {
   return (dispatch) => {
-    axios
-      .post(`${BASEURL}billingCycles`, values)
-      .then((resp) => {
-        dispatch(init());
-      })
-      .catch((e) => {
-        console.log(e.response.data.erros);
-      });
+    const id = values._id ? values._id : "";
+    axios[method](`${BASEURL}billingCycles/${id}`, values).then((resp) => {
+      dispatch(init());
+    });
   };
 }
 
@@ -30,6 +38,14 @@ export function showUpdate(billingCycle) {
   return [
     showTabs("tabUpdate"),
     selectTab("tabUpdate"),
+    initialize("billingCycleForm", billingCycle),
+  ];
+}
+
+export function showDelete(billingCycle) {
+  return [
+    showTabs("tabDelete"),
+    selectTab("tabDelete"),
     initialize("billingCycleForm", billingCycle),
   ];
 }

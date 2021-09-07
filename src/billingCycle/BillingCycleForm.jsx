@@ -6,9 +6,10 @@ import { init } from "../store/actions/billingCycleAction";
 
 import Grid from "../components/layout/Grid";
 import LabelAndInput from "../components/form/LabelAndInput";
+import CredList from "./CredList";
 
 let BillingCycleForm = (props) => {
-  const { handleSubmit } = props;
+  const { handleSubmit, readOnly } = props;
   return (
     <form onSubmit={handleSubmit}>
       <Grid col={3} gap={2}>
@@ -17,6 +18,7 @@ let BillingCycleForm = (props) => {
           component={LabelAndInput}
           label="Nome"
           placeholder="Informe o nome"
+          readOnly={readOnly}
         />
         <Field
           name="month"
@@ -24,6 +26,7 @@ let BillingCycleForm = (props) => {
           label="Mes"
           type="number"
           placeholder="Informe o mes"
+          readOnly={readOnly}
         />
         <Field
           name="year"
@@ -31,7 +34,9 @@ let BillingCycleForm = (props) => {
           label="Ano"
           type="number"
           placeholder="Informe o ano"
+          readOnly={readOnly}
         />
+        <CredList col={3} />
       </Grid>
       <div className="mt-4 flex gap-2">
         <button
