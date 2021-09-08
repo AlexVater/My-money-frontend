@@ -1,5 +1,5 @@
 import React from "react";
-import { reduxForm, Field } from "redux-form";
+import { reduxForm, Field, formValueSelector } from "redux-form";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { init } from "../store/actions/billingCycleAction";
@@ -9,7 +9,7 @@ import LabelAndInput from "../components/form/LabelAndInput";
 import CredList from "./CredList";
 
 let BillingCycleForm = (props) => {
-  const { handleSubmit, readOnly } = props;
+  const { handleSubmit, readOnly, credits } = props;
   return (
     <form onSubmit={handleSubmit}>
       <Grid col={3} gap={2}>
@@ -36,7 +36,10 @@ let BillingCycleForm = (props) => {
           placeholder="Informe o ano"
           readOnly={readOnly}
         />
-        <CredList col={3} />
+      </Grid>
+      <div className="mt-4 border-b-2 border-gray-200" />
+      <Grid col={2} gap={8}>
+        <CredList col={3} list={credits} readOnly={readOnly} />
       </Grid>
       <div className="mt-4 flex gap-2">
         <button
@@ -61,6 +64,12 @@ BillingCycleForm = reduxForm({
   form: "billingCycleForm",
 })(BillingCycleForm);
 
+const selector = formValueSelector("billingCycleForm");
+
+const mapsStateToProps = (state) => ({
+  credits: selector(state, "credits"),
+});
+
 const mapDispatchToProps = (dispatch) => bindActionCreators({ init }, dispatch);
 
-export default connect(null, mapDispatchToProps)(BillingCycleForm);
+export default connect(mapsStateToProps, mapDispatchToProps)(BillingCycleForm);

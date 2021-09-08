@@ -1,9 +1,9 @@
 import axios from "axios";
-import { reset as resetForm, initialize } from "redux-form";
+import { initialize } from "redux-form";
 import { showTabs, selectTab } from "./tabsAction";
 
 const BASEURL = "http://localhost:8080/api/";
-const INITIAL_VALUES = {};
+const INITIAL_VALUES = { credits: [{}] };
 
 export function getList() {
   const res = axios.get(`${BASEURL}billingCycles`);

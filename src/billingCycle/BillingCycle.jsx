@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { selectTab, showTabs } from "../store/actions/tabsAction";
 
 import SectionContent from "../components/template/SectionContent";
 import SectionHeader from "../components/template/SectionHeader";
@@ -16,15 +15,16 @@ import TabContent from "../components/tab/TabContent";
 import BillingCycleList from "./BillingCycleList";
 import BillingCycleForm from "./BillingCycleForm";
 
-import { create, update, remove } from "../store/actions/billingCycleAction";
+import {
+  init,
+  create,
+  update,
+  remove,
+} from "../store/actions/billingCycleAction";
 
 const BillingCycle = (props) => {
   useEffect(() => {
-    props.selectTab("tabList");
-  }, [props]);
-
-  useEffect(() => {
-    props.showTabs("tabList", "tabCreate");
+    props.init();
   }, [props]);
 
   return (
@@ -63,6 +63,6 @@ const BillingCycle = (props) => {
 };
 
 const mapDispatchToProps = (dispatch) =>
-  bindActionCreators({ selectTab, showTabs, create, update, remove }, dispatch);
+  bindActionCreators({ init, create, update, remove }, dispatch);
 
 export default connect(null, mapDispatchToProps)(BillingCycle);
