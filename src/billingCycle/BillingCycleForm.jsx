@@ -10,6 +10,7 @@ import CredList from "./CredList";
 
 let BillingCycleForm = (props) => {
   const { handleSubmit, readOnly, credits } = props;
+  // console.log(credits);
   return (
     <form onSubmit={handleSubmit}>
       <Grid col={3} gap={2}>
@@ -39,7 +40,7 @@ let BillingCycleForm = (props) => {
       </Grid>
       <div className="mt-4 border-b-2 border-gray-200" />
       <Grid col={2} gap={8}>
-        <CredList col={3} list={credits} readOnly={readOnly} />
+        <CredList col={3} list={[credits]} readOnly={readOnly} />
       </Grid>
       <div className="mt-4 flex gap-2">
         <button

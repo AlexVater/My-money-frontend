@@ -20,10 +20,10 @@ const CredList = (props) => {
     return list.map((item, key) => {
       return (
         <tr className="flex justify-between" key={key}>
-          {console.log(item)}
+          {console.log(item[key].name)}
           <td>
             <Field
-              name={item.name}
+              name={item[key].name}
               component={LabelAndInput}
               placeholder="Informe o nome"
               readOnly={props.readOnly}
@@ -31,7 +31,7 @@ const CredList = (props) => {
           </td>
           <td>
             <Field
-              name={item.value}
+              name={item[key].value}
               component={LabelAndInput}
               placeholder="Informe o valor"
               readOnly={props.readOnly}
