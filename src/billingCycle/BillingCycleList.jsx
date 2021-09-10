@@ -1,21 +1,12 @@
 import React from "react";
-import { useEffect } from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import {
-  getList,
-  showUpdate,
-  showDelete,
-} from "../store/actions/billingCycleAction";
+import { showUpdate, showDelete } from "../store/actions/billingCycleAction";
 
 import { RiPencilFill } from "react-icons/ri";
 import { IoTrashBin } from "react-icons/io5";
 
 const BillingCycleList = (props) => {
-  useEffect(() => {
-    props.getList();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
   function renderRows() {
     let list = props.list || [];
     return list.map((blc, key) => {
@@ -62,6 +53,6 @@ const BillingCycleList = (props) => {
 
 const mapsStateToProps = (state) => ({ list: state.billingCycle.list });
 const mapDispatchToProps = (dispatch) =>
-  bindActionCreators({ getList, showUpdate, showDelete }, dispatch);
+  bindActionCreators({ showUpdate, showDelete }, dispatch);
 
 export default connect(mapsStateToProps, mapDispatchToProps)(BillingCycleList);

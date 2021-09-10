@@ -1,12 +1,12 @@
-import React from 'react'
-import Menu from './Menu'
+import React from "react";
+import Menu from "./Menu";
 
 const SideBar = () => {
-    return(
-        <div className="h-screen w-60 max-w-xs bg-gray-800 text-white">
-            <Menu />
-        </div>
-    )
-}
+  return (
+    <div className="min-h-screen w-60 max-w-xs bg-gray-800 text-white">
+      <Menu />
+    </div>
+  );
+};
 
-export default SideBar
+export default SideBar;

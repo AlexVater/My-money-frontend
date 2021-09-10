@@ -25,7 +25,7 @@ import {
 const BillingCycle = (props) => {
   useEffect(() => {
     props.init();
-  }, [props]);
+  });
 
   return (
     <>
