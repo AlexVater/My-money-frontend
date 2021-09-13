@@ -3,12 +3,14 @@ import promise from "redux-promise";
 import multi from "redux-multi";
 import thunk from "redux-thunk";
 
+import authReducer from "./reducers/authReducer";
 import dashboardReducer from "./reducers/dashboardReducer";
 import tabsReducer from "./reducers/tabsReducer";
 import billingCycleReducer from "./reducers/billingCycleReducer";
 import { reducer as formReducer } from "redux-form";
 
 const reducers = combineReducers({
+  auth: authReducer,
   dashboard: dashboardReducer,
   tab: tabsReducer,
   billingCycle: billingCycleReducer,

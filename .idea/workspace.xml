@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45da80e1-0535-47fd-9ba2-e6456ce60955" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/billingCycle/ItemList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/billingCycle/Summary.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/billingCycle/BillingCycle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/billingCycle/BillingCycle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/billingCycle/BillingCycleForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/billingCycle/BillingCycleForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/billingCycle/BillingCycleList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/billingCycle/BillingCycleList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/billingCycle/CredList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/SideBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/billingCycleAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/billingCycleAction.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +66,9 @@
       <workItem from="1631209868310" duration="1588000" />
       <workItem from="1631280960875" duration="14682000" />
       <workItem from="1631299531104" duration="260000" />
-      <workItem from="1631299806701" duration="305000" />
+      <workItem from="1631299806701" duration="578000" />
+      <workItem from="1631304694766" duration="299000" />
+      <workItem from="1631541067116" duration="528000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from "react";
 
 import Grid from "../components/layout/Grid";
+import Navbar from "../components/template/Navbar";
 import SectionContent from "../components/template/SectionContent";
 import SectionHeader from "../components/template/SectionHeader";
 import ValueBox from "../widget/ValueBox";
@@ -22,6 +23,7 @@ const Dashboard = () => {
   return (
     <>
       <SectionHeader title="Dashtitle" small="v.1.0.1" />
+      <Navbar />
       <SectionContent>
         <Grid col="3" gap="8">
           <ValueBox
