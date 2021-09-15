@@ -5,9 +5,9 @@ const MenuItem = (props) => {
   return (
     <Link
       to={props.path}
-      className="list-item pl-4 pr-12 py-1 my-6 text-gray-500 hover:text-green-500 transition"
+      className="list-item pl-2 pr-8 mb-6 text-gray-500 hover:text-green-500 transition"
     >
-      <li className="">{props.title}</li>
+      <li>{props.title}</li>
     </Link>
   );
 };

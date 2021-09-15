@@ -3,7 +3,7 @@ import Menu from "./Menu";
 
 const SideBar = () => {
   return (
-    <div className="min-h-screen w-60 max-w-xs bg-gray-800 text-white">
+    <div className="min-h-screen w-40 max-w-xs bg-gray-800 text-white">
       <Menu />
     </div>
   );

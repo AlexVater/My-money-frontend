@@ -1,65 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { logout } from "../../store/actions/authAction";
 
 function Navbar(props) {
-  const [open, setOpen] = useState(false);
-
-  function changeOpen() {
-    setOpen(true);
-  }
-
-  const { name, email } = props.user;
-
   return (
-    <div className="p-3">
-      <ul className="w-full  bg-gray-600">
-        <li
-          onMouseLeave={() => changeOpen()}
-          className={`dropdown user user-menu ${open ? "open" : ""}`}
-        >
-          <a
-            href="#"
-            onClick={() => changeOpen()}
-            aria-expanded={open ? "true" : "false"}
-            className="dropdown-toggle"
-            data-toggle="dropdown"
-          >
-            <img
-              src="http://lorempixel.com/160/160/abstract"
-              className="user-image"
-              alt="User Image"
-            />
-            <span className="hidden-xs">{name}</span>
-          </a>
-          <ul className="dropdown-menu">
-            <li className="user-header">
-              <img
-                src="http://lorempixel.com/160/160/abstract"
-                className="img-circle"
-                alt="User Image"
-              />
-              <p>
-                {name}
-                <small>{email}</small>
-              </p>
-            </li>
-            <li className="user-footer">
-              <div className="pull-right">
-                <a
-                  href="#"
-                  onClick={props.logout}
-                  className="btn btn-default btn-flat"
-                >
-                  Sair
-                </a>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+    <nav className="flex items-center justify-between bg-gray-800 px-1 py-2">
+      <h1 className="text-xl text-white font-semibold tracking-wider">
+        My Money
+      </h1>
+      <a
+        href="#"
+        className="text-sm text-white leading-none border rounded border-white px-4 py-2 hover:border-transparent hover:text-gray-800 hover:bg-white transition"
+      >
+        Sair
+      </a>
+    </nav>
   );
 }
 

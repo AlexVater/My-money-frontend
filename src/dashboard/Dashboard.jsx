@@ -23,7 +23,6 @@ const Dashboard = () => {
   return (
     <>
       <SectionHeader title="Dashtitle" small="v.1.0.1" />
-      <Navbar />
       <SectionContent>
         <Grid col="3" gap="8">
           <ValueBox
