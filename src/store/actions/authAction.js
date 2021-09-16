@@ -15,6 +15,7 @@ function submit(values, url) {
       .post(url, values)
       .then((resp) => {
         dispatch([{ type: "USER_FETCHED", payload: resp.data }]);
+        console.log();
       })
       .catch((e) => {
         e.response.data.errors.forEach((error) => console.log("Erro", error));

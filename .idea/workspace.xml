@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45da80e1-0535-47fd-9ba2-e6456ce60955" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/franc_bronze.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AuthOrApp.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auth/Auth.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auth/AuthInput.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/Content.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/Menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/MenuItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/MenuItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/SideBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/dashboard/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthOrApp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthOrApp.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/Auth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/Auth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/consts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/authAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/authAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/authReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +92,10 @@
       <workItem from="1631541067116" duration="528000" />
       <workItem from="1631547417762" duration="5277000" />
       <workItem from="1631714309252" duration="7255000" />
-      <workItem from="1631727209060" duration="2289000" />
+      <workItem from="1631727209060" duration="5583000" />
+      <workItem from="1631798398756" duration="9035000" />
+      <workItem from="1631817494800" duration="1936000" />
+      <workItem from="1631821006459" duration="2625000" />
     </task>
     <servers />
   </component>

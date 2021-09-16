@@ -61,7 +61,7 @@ class Auth extends Component {
               icon="lock"
               hide={loginMode}
             />
-            <Row>
+            <div>
               <Grid cols="4">
                 <button
                   type="submit"
@@ -70,7 +70,7 @@ class Auth extends Component {
                   {loginMode ? "Entrar" : "Registrar"}
                 </button>
               </Grid>
-            </Row>
+            </div>
           </form>
           <br />
           <a onClick={() => this.changeMode()}>
