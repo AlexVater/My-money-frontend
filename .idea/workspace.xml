@@ -5,11 +5,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AuthOrApp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthOrApp.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auth/Auth.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/Auth.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/AuthInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/AuthInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/billingCycle/BillingCycleForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/billingCycle/BillingCycleForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tab/TabHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tab/TabHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/consts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/dashboard/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/authAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/authAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/authReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/billingCycleReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/billingCycleReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/tabsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/tabsReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +101,10 @@
       <workItem from="1631727209060" duration="5583000" />
       <workItem from="1631798398756" duration="9035000" />
       <workItem from="1631817494800" duration="1936000" />
-      <workItem from="1631821006459" duration="2625000" />
+      <workItem from="1631821006459" duration="3362000" />
+      <workItem from="1631883202060" duration="2701000" />
+      <workItem from="1631888085786" duration="3173000" />
+      <workItem from="1632141601754" duration="8488000" />
     </task>
     <servers />
   </component>

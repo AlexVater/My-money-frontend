@@ -19,7 +19,7 @@ const ItemList = (props) => {
           <Field
             name={`${props.field}[${index}].name`}
             component={LabelAndInput}
-            placeholder="Informe o nome"
+            placeholder="Nome"
             readOnly={props.readOnly}
           />
         </td>
@@ -27,7 +27,7 @@ const ItemList = (props) => {
           <Field
             name={`${props.field}[${index}].value`}
             component={LabelAndInput}
-            placeholder="Informe o valor"
+            placeholder="Valor"
             readOnly={props.readOnly}
           />
         </td>
@@ -36,7 +36,7 @@ const ItemList = (props) => {
             <Field
               name={`${props.field}[${index}].status`}
               component={LabelAndInput}
-              placeholder="Informe o status"
+              placeholder="Status"
               readOnly={props.readOnly}
             />
           </td>

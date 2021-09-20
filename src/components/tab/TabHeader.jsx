@@ -39,9 +39,8 @@ const TabHeader = (props) => {
           selected ? "bg-gray-50 border-blue-900" : ""
         }`}
       >
-        <a
+        <button
           className="p-2 "
-          href="#"
           data-toggle="tab"
           data-target="{props.target}"
           onClick={() => props.selectTab(props.target)}
@@ -54,7 +53,7 @@ const TabHeader = (props) => {
             {handleIcon(props.icon)}
           </IconContext.Provider>
           {props.label}
-        </a>
+        </button>
       </li>
     </If>
   );

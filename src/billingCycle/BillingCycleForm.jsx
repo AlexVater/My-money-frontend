@@ -16,7 +16,7 @@ let BillingCycleForm = (props) => {
           name="name"
           component={LabelAndInput}
           label="Nome"
-          placeholder="Informe o nome"
+          placeholder="Nome"
           readOnly={readOnly}
         />
         <Field
@@ -24,7 +24,7 @@ let BillingCycleForm = (props) => {
           component={LabelAndInput}
           label="Mes"
           type="number"
-          placeholder="Informe o mes"
+          placeholder="Mes"
           readOnly={readOnly}
         />
         <Field
@@ -32,7 +32,7 @@ let BillingCycleForm = (props) => {
           component={LabelAndInput}
           label="Ano"
           type="number"
-          placeholder="Informe o ano"
+          placeholder="Ano"
           readOnly={readOnly}
         />
       </Grid>

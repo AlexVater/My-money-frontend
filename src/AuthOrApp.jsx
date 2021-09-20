@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -7,24 +7,29 @@ import App from "./App";
 import Auth from "./auth/Auth";
 import { validateToken } from "./store/actions/authAction";
 
-class AuthOrApp extends Component {
-  componentWillMount() {
-    if (this.props.auth.user) {
-      this.props.validateToken(this.props.auth.user.token);
+const AuthOrApp = (props) => {
+  useEffect(() => {
+    if (props.auth.user) {
+      props.validateToken(props.auth.user.token);
     }
-  }
-  render() {
-    const { user, validToken } = this.props.auth;
+  });
+
+  const { user, validToken } = props.auth;
+
+  function handleRender() {
     if (user && validToken) {
       axios.defaults.headers.common["authorization"] = user.token;
-      return <App>{this.props.children}</App>;
+      return <App>{props.children}</App>;
     } else if (!user && !validToken) {
       return <Auth />;
     } else {
       return false;
     }
   }
-}
+
+  return handleRender();
+};
+
 const mapStateToProps = (state) => ({ auth: state.auth });
 const mapDispatchToProps = (dispatch) =>
   bindActionCreators({ validateToken }, dispatch);
